@@ -2,47 +2,9 @@
     font-family: "Aston Script";
     src: url("Fonts/Aston\ Script.ttf");
 }
-@keyframes shrink{
-    from {
-        background-size: 100%;
-    }
-    to {
-        background-size: 40%;
-    }
-}
-<!-- Mobile Phone CSS -->
-@media screen and (max-width: 1000px) {
-    p{
-    font-family: 'Quintessential';
-    color:white;
-    text-align: center;
-    margin: 50px 15%;
-    font-weight: 600;
-    font-size: 20px;
-    padding: 10px;
-    background-color: rgba(83, 83, 83, 0.12);
-    border-radius: 10px;
-    border: 2px solid rgba(212, 175, 55, 0.44);
-    }
-    li a{
-    display: inline-block;
-    }
-    .pagetitle{
-    font-size: 40px;
-    font-family: "Aston Script";
-    font-weight: 400;
-    top:0;
-    }
-    a{
-    color: rgba(255, 255, 255, 0.494);
-    text-decoration: none;
-    font-family: "Italianno";
-    font-weight: 600;
-    font-size: 15px;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0);
-    }
-}
+
+
+
 html {
     background-color: rgb(17, 17, 17);
 
@@ -147,4 +109,36 @@ p{
     padding-left: 50%;
     font-size: 15px;
     color: rgba(212, 175, 55, 0.44);
+}
+@media (max-width:767.98px){
+    p{
+    font-family: 'Quintessential';
+    color:white;
+    text-align: center;
+    margin: 50px 15%;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(83, 83, 83, 0.12);
+    border-radius: 10px;
+    border: 2px solid rgba(212, 175, 55, 0.44);
+    }
+    li a{
+    display: inline-block;
+    }
+    .pagetitle{
+    font-size: 40px;
+    font-family: "Aston Script";
+    font-weight: 400;
+    top:0;
+    }
+    a{
+    color: rgba(255, 255, 255, 0.494);
+    text-decoration: none;
+    font-family: "Italianno";
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+    }
 }
