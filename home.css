@@ -13,24 +13,24 @@ body{
     margin: 0px;
 }
 #home{
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczPT6yHVDCx_S4i0YZda0g2LyYcJcj5U9qE0p2RpvSR6l07V-vD_nHlRzI2CTXmnvexBrTlSYmzGABE-eOP-fe81JfgNDQHLlKhrxa-NWHhFmCvpjHjst3kVi2MfpV3TCjM6vcSnuJtnDaaq43Paxdc=w694-h463-s-no");
+    background-image: url("https://i.postimg.cc/q0WNDWDd/MC-BW-0095-0095.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: 50% 40%;
+    background-position: 50% 45%;
     background-size: cover;
 }
 #ourstory{
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOS-41L6Reu3DaF3lFLVQH9VmNBgGYWKc_z_w2Ya6lPouOP7AQb2b91UE6YVc-T8T5h-0zMngOoWUqu9g8CVeSmDHZ4MblnFy38MLD6xEWMUceCu46CEBKlcZLweYQuxLMuymaKF6tjZAy8tgVDWF0=w650-h433-s-no");
+    background-image: url("https://i.postimg.cc/nZ1Dr338/MC-BW-0150-0150.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 50% 30%;
     background-size: cover;
 }
 #thingstodo{
-    background-image: url("https://i.postimg.cc/xTdJs6F9/MC-BW-0042-0042.jpg");
+    background-image: url("https://i.postimg.cc/b8xxwMxS/MC-BW-0042-0042.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: 50% 30%;
+    background-position: 50% 50%;
     background-size: cover;
 }
 .underlined{
@@ -62,8 +62,10 @@ ul{
     font-size: 80px;
     font-family: "Aston Script";
     font-weight: 400;
-    top:0;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
+
 
 header{
     
@@ -106,8 +108,8 @@ p{
     border: 2px solid rgba(212, 175, 55, 0.44);
 }
 .backtotop{
-    padding-left: 50%;
-    font-size: 15px;
+    padding-left: 10px;
+    font-size: 20px;
     color: rgba(212, 175, 55, 0.44);
 }
 @media (max-width:767.98px){
