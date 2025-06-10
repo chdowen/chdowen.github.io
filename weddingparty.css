@@ -18,12 +18,13 @@ div{
 .bride-groom{
     margin-bottom: 15px;
 }
+
 .party-member{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    max-width: 50%;
 }
 .party-member *{
     margin: 5px 15px;
