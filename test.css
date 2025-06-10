@@ -1,0 +1,382 @@
+/* Gothic Wedding Site - Addams Family Inspired */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quintessential', cursive;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
+    color: #e8e8e8;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Gothic background texture */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(120, 0, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(80, 0, 80, 0.1) 0%, transparent 50%),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><defs><pattern id="gothic" patternUnits="userSpaceOnUse" width="20" height="20"><path d="M0 20L20 0M0 0L20 20" stroke="%23333" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23gothic)"/></svg>');
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(20,20,20,0.95) 100%);
+    border-bottom: 3px solid #8B0000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.pagetitle {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3.5rem;
+    font-family: 'Monsieur La Doulaise', cursive;
+    color: #e8e8e8;
+    text-shadow: 
+        3px 3px 6px rgba(0,0,0,0.8),
+        0 0 20px rgba(139, 0, 0, 0.5),
+        0 0 40px rgba(139, 0, 0, 0.3);
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.pagetitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #8B0000 50%, transparent 100%);
+}
+
+/* Navigation styling */
+#main-nav {
+    background: rgba(0,0,0,0.8);
+    border-top: 1px solid #333;
+}
+
+#main-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 15px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#main-nav li {
+    margin: 0 15px;
+}
+
+#main-nav a {
+    color: #e8e8e8;
+    text-decoration: none;
+    font-family: 'Quintessential', cursive;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#main-nav a:hover {
+    color: #fff;
+    border-color: #8B0000;
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.2), rgba(80, 0, 80, 0.2));
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
+}
+
+#main-nav #current a {
+    background: linear-gradient(135deg, #8B0000, #4B0000);
+    border-color: #8B0000;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Image styling */
+#image {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.addams-frame {
+    max-width: 100%;
+    height: auto;
+    border: 8px solid #2a2a2a;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 0 3px #8B0000,
+        0 10px 30px rgba(0,0,0,0.8),
+        inset 0 0 20px rgba(0,0,0,0.3);
+    filter: contrast(1.1) brightness(0.9) sepia(0.1);
+    transition: all 0.3s ease;
+}
+
+.addams-frame:hover {
+    transform: scale(1.02);
+    box-shadow: 
+        0 0 0 3px #8B0000,
+        0 15px 40px rgba(0,0,0,0.9),
+        inset 0 0 20px rgba(0,0,0,0.3),
+        0 0 30px rgba(139, 0, 0, 0.3);
+}
+
+/* Text content */
+main > div:nth-child(2) {
+    background: linear-gradient(135deg, rgba(20,20,20,0.9), rgba(40,40,40,0.8));
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #333;
+    margin-bottom: 40px;
+    box-shadow: 
+        0 10px 25px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+main > div:nth-child(2) p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #e8e8e8;
+    font-family: 'Quintessential', cursive;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Main grid section */
+#main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.recommendation-card {
+    background: linear-gradient(135deg, rgba(30,30,30,0.9), rgba(50,50,50,0.8));
+    border: 2px solid #444;
+    border-radius: 15px;
+    padding: 30px;
+    min-height: 200px;
+    box-shadow: 
+        0 8px 25px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    border-color: #8B0000;
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.8),
+        inset 0 1px 0 rgba(255,255,255,0.1),
+        0 0 20px rgba(139, 0, 0, 0.2);
+}
+
+.recommendation-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #8B0000, #4B0000, #8B0000);
+    border-radius: 15px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.recommendation-card:hover::before {
+    opacity: 0.3;
+}
+
+/* Content styling for recommendation cards */
+.recommendation-card h2 {
+    color: #e8e8e8;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.8),
+        0 0 15px rgba(139, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rec-item {
+    background: rgba(20,20,20,0.6);
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.rec-item:hover {
+    background: rgba(30,30,30,0.8);
+    border-color: #8B0000;
+    transform: translateX(5px);
+}
+
+.rec-item h3 {
+    color: #e8e8e8;
+    font-family: 'Quintessential', cursive;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+}
+
+.rec-item p {
+    color: #cccccc;
+    font-family: 'Quintessential', cursive;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Gothic decorative elements */
+.gothic-heading {
+    position: relative;
+}
+
+.gothic-heading::before,
+.gothic-heading::after {
+    content: '⚜';
+    color: #8B0000;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.8);
+}
+
+.gothic-heading::before {
+    left: 20px;
+}
+
+.gothic-heading::after {
+    right: 20px;
+}
+
+/* Dramatic text effect */
+.dramatic-text {
+    position: relative;
+    overflow: hidden;
+}
+
+.dramatic-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(139, 0, 0, 0.3), transparent);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .pagetitle {
+        font-size: 2.5rem;
+        padding: 15px 0;
+    }
+    
+    #main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #main-nav li {
+        margin: 5px 0;
+    }
+    
+    main {
+        padding: 20px 15px;
+    }
+    
+    main > div:nth-child(2) {
+        padding: 20px;
+    }
+    
+    main > div:nth-child(2) p {
+        font-size: 1.1rem;
+    }
+    
+    #main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .gothic-heading::before,
+    .gothic-heading::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagetitle {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    
+    #main-nav a {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Additional gothic flourishes */
+body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #8B0000, transparent);
+    z-index: 1000;
+}

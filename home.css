@@ -1,0 +1,150 @@
+@font-face{
+    font-family: "Aston Script";
+    src: url("Fonts/Aston\ Script.ttf");
+}
+@keyframes shrink{
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 40%;
+    }
+}
+<!-- Mobile Phone CSS -->
+@media screen and (max-width: 1000px) {
+    p{
+    font-family: 'Quintessential';
+    color:white;
+    text-align: center;
+    margin: 50px 15%;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(83, 83, 83, 0.12);
+    border-radius: 10px;
+    border: 2px solid rgba(212, 175, 55, 0.44);
+    }
+    li a{
+    display: inline-block;
+    }
+    .pagetitle{
+    font-size: 40px;
+    font-family: "Aston Script";
+    font-weight: 400;
+    top:0;
+    }
+    a{
+    color: rgba(255, 255, 255, 0.494);
+    text-decoration: none;
+    font-family: "Italianno";
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+    }
+}
+html {
+    background-color: rgb(17, 17, 17);
+
+}
+body{
+    margin: 0px;
+}
+#home{
+    background-image: url("./Engagement\ Photos/BW/MC_BW_0095_0095.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 40%;
+    background-size: cover;
+}
+#ourstory{
+    background-image: url("./Engagement\ Photos/BW/MC_BW_0150_0150.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 30%;
+    background-size: cover;
+}
+#thingstodo{
+    background-image: url("./Engagement\ Photos/BW/MC_BW_0042_0042.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 30%;
+    background-size: cover;
+}
+.underlined{
+    text-decoration: underline;
+    text-decoration-color: rgba(212, 175, 55, 0.44);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+li{
+    display: inline;
+    padding: 10px;
+    list-style-type: none;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgba(91, 0, 0, 0.0);
+}
+ul{
+    border: 2px rgba(212, 175, 55, 0.44);
+    border-style: solid none solid none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.566);
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    
+}
+
+.pagetitle{
+    font-size: 80px;
+    font-family: "Aston Script";
+    font-weight: 400;
+    top:0;
+}
+
+header{
+    
+    color: white;
+    width: 100%;
+    text-align: center;
+    top:-60px;
+}
+
+a{
+    color: rgba(255, 255, 255, 0.494);
+    text-decoration: none;
+    font-family: "Italianno";
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+    
+}
+    li a{
+        display: inline-block;
+    }
+li a:hover{
+    color:gray;
+    text-shadow: 0 10px 25px rgba(210, 0, 0, 0.625);
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in-out;
+}
+
+p{
+    font-family: 'Quintessential';
+    color:white;
+    text-align: center;
+    margin: 50px 15%;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(83, 83, 83, 0.12);
+    border-radius: 10px;
+    border: 2px solid rgba(212, 175, 55, 0.44);
+}
+.backtotop{
+    padding-left: 50%;
+    font-size: 15px;
+    color: rgba(212, 175, 55, 0.44);
+}
