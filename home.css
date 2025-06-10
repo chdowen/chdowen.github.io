@@ -25,12 +25,20 @@ body{
     background-attachment: scroll;
     background-position: 50% 30%;
     background-size: cover;
+    
 }
 #thingstodo{
     background-image: url("https://i.postimg.cc/b8xxwMxS/MC-BW-0042-0042.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 50% 50%;
+    background-size: cover;
+}
+#gallerytitle{
+    background-image: url("https://i.postimg.cc/9WbHqbBr/MC-BW-0160-0160.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 88%;
     background-size: cover;
 }
 .underlined{
@@ -62,8 +70,10 @@ ul{
     font-size: 80px;
     font-family: "Aston Script";
     font-weight: 400;
+    text-shadow: 1px 1px 1px black;
     margin-top: 0px;
     margin-bottom: 5px;
+    padding-top: 50px;
 }
 
 
