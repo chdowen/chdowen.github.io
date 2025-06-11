@@ -33,6 +33,10 @@ div{
 
 .name{
     font-family: "Aston Script";
+    border: none;
+    background-color: rgba(212, 175, 55, 0);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 .description{
     font-family: 'Quintessential';
@@ -45,7 +49,6 @@ div{
     background-position: 50% 45%;
     border-radius: 50%;
     border: 2px solid rgba(212, 175, 55, 0.44);
-    background-overflow: hidden;
 }
 
 #nimbus{
@@ -56,4 +59,21 @@ div{
 }
 .top{
     object-position: 50% 0%;
+}
+.title-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:rgba(212, 175, 55, 0);
+    
+}
+.title-div h6{
+    font-family: 'Quintessential';
+    color: white;
+    font-size: 14px;
+    margin-top: 0px
+}
+.title-div h6 i{
+    margin: 0px;
 }
