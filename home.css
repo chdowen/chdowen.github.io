@@ -47,6 +47,15 @@ body{
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
 }
+.crest{
+    width: 40px;
+    height: 40px;
+}
+#nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 li{
     display: inline;
     padding: 10px;

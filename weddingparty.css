@@ -10,12 +10,13 @@ div{
 .row{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     background-color: rgba(83, 83, 83, 0.12);
     border-radius: 10px;
     border: 2px solid rgba(212, 175, 55, 0.44);
 }
 .bride-groom{
+    padding-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -35,4 +36,24 @@ div{
 }
 .description{
     font-family: 'Quintessential';
+}
+.picture{
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+    object-position: center;
+    background-position: 50% 45%;
+    border-radius: 50%;
+    border: 2px solid rgba(212, 175, 55, 0.44);
+    background-overflow: hidden;
+}
+
+#nimbus{
+    object-position: 50% 20%;
+}
+#jenna{
+    object-position: 50% 10%;
+}
+.top{
+    object-position: 50% 0%;
 }
