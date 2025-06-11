@@ -94,7 +94,9 @@ header{
     top:-60px;
 }
 
-a{
+
+li a{
+    display: inline-block;
     color: rgba(255, 255, 255, 0.494);
     text-decoration: none;
     font-family: "Italianno";
@@ -102,11 +104,7 @@ a{
     font-size: 30px;
     cursor: pointer;
     background: rgba(255, 255, 255, 0);
-    
 }
-    li a{
-        display: inline-block;
-    }
 li a:hover{
     color:gray;
     text-shadow: 0 10px 25px rgba(210, 0, 0, 0.625);
